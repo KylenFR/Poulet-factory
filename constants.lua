@@ -1,16 +1,17 @@
 width = love.graphics.getWidth()
 height = love.graphics.getHeight()
 
-vie = 3
-
 poulet_max = 5
 
 temps = 0
 times = 0
 
-score = 0
-
 jauge = 1000
+jauge_max = 1000
+jauge_rate = 5
+time_rate = 1
+
+score = 0
 
 coeur = {2,0, 3,0, 7,0, 8,0, 1,1, 4,1, 6,1, 9,1, 0,2, 5,2, 10,2, -- 3eme rangées
           0,3, 10,3, 0,4, 10,4, 0,5, 10,5,
@@ -20,5 +21,7 @@ coeur = {2,0, 3,0, 7,0, 8,0, 1,1, 4,1, 6,1, 9,1, 0,2, 5,2, 10,2, -- 3eme rangée
 menuL = true
 level = false
 rejouer = false
+
+difficulty = "hardcore"
 
 highscores = {}

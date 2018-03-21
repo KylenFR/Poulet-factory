@@ -31,6 +31,10 @@ end
 
 function love.update()
 
+    if menuL == true then
+      selectDifficulty()
+    end
+
     if level == true then
       creationPoulet()
 
@@ -49,7 +53,8 @@ function love.draw()
     --Fonction pour dessiner (appelée à chaque frame)
     if menuL == true then
         menu()
-        setDifficulty()
+        drawButton()
+        selectDifficulty()
 
     elseif level == true then
         love.graphics.setColor(255, 255, 255)
@@ -74,6 +79,8 @@ function love.draw()
 
     elseif rejouer == true then
         replay()
+        drawButton()
+        selectDifficulty()
 
     end
 end
